@@ -28,7 +28,13 @@ VALUES
 INSERT INTO produtos (id_produto, nome_produto, preco, qtd_estoque)
 VALUES (11, 'Margarina', 3.20, 8);
 
-SELECT * FROM produtos;
+INSERT INTO produtos (id_produto, nome_produto, descricao, preco, qtd_estoque)
+VALUES S
+(12, 'Sabão em Pó', 'Caixa de sabão em pó de 1/2 kg', 12.50, 5),
+(13, 'Biscouto', 'Pacote de biscoito integral 110g', 3.45, 16),
+(14, 'Manteiga', 'Pote de manteiga 250g', 8.70, 5);
+
+SELECT * FROM produtos ORDER BY id_produto;
 
 INSERT INTO pedidos (id_cliente, id_produto, qtd_vendida)
 VALUES 
